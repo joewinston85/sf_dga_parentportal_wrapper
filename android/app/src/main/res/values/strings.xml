@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Delta Parent Portal</string>
+    <string name="title_activity_main">Delta Parent Portal</string>
+    <string name="package_name">com.tribe.parentportal</string>
+    <string name="custom_url_scheme">com.tribe.parentportal</string>
+</resources>
