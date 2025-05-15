@@ -3,16 +3,12 @@ workflows:
     name: iOS AdHoc Build
     environment:
       ios_signing:
-        provisioning_profiles:
-          - name: Joe_iPhone
-            distribution_type: ad_hoc
-        certificates:
-          - path: certificates/ios_distribution.p12
-            password: B@ckfl1p!23
         targets:
           com.tribe.parentportal:
+            distribution_type: ad_hoc
             provisioning_profile: Joe_iPhone
             certificate: certificates/ios_distribution.p12
+            certificate_password: B@ckfl1p!23
 
     scripts:
       - name: Install dependencies
