@@ -2,6 +2,8 @@ workflows:
   ios-adhoc:
     name: iOS AdHoc Build
     environment:
+      groups:
+        - p12
       ios_signing:
         provisioning_profiles:
           - name: Joe_iPhone
