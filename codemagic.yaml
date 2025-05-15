@@ -2,7 +2,11 @@ workflows:
   ios-adhoc:
     name: iOS AdHoc Build
     environment:
+      vars:
+        XCODE_WORKSPACE: "App.xcworkspace"
+        XCODE_SCHEME: "App"
       ios_signing:
+        use_target_signing: false
         provisioning_profiles:
           - name: Joe_iPhone
         certificates:
@@ -19,4 +23,3 @@ workflows:
 
     artifacts:
       - build/ios/ipa/*.ipa
-
