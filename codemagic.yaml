@@ -6,7 +6,7 @@ workflows:
         APP_ID: "com.joewinston.parentportal"
       ios_signing:
         provisioning_profiles:
-          - path: provisioning/Joe_iPhone.mobileprovision
+          - name: Joe_iPhone
         certificates:
           - path: certificates/dga_ios_dist.p12
             password: B@ckfl1p!23
