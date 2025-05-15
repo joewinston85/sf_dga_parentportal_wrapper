@@ -7,7 +7,7 @@ workflows:
       ios_signing:
         provisioning_profiles:
           - name: Joe_iPhone
-	 distribution_type: ad_hoc
+          distribution_type: ad_hoc
         certificates:
           - path: certificates/dga_ios_dist.p12
             password: B@ckfl1p!23
