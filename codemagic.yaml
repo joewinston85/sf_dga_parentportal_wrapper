@@ -7,7 +7,7 @@ workflows:
           com.tribe.parentportal:
             distribution_type: ad_hoc
             provisioning_profile: Joe_iPhone
-            certificate: certificates/ios_distribution.p12
+            certificate: ios_distribution
             certificate_password: B@ckfl1p!23
 
     scripts:
