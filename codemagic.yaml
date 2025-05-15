@@ -8,7 +8,7 @@ workflows:
             distribution_type: ad_hoc
         certificates:
           - name: Adhoc_ParentPortal
-            password: B@ckfl1p!23
+            password: "B@ckfl1p!23"
 
     scripts:
       - name: Install dependencies
