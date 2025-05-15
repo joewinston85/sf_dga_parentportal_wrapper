@@ -5,12 +5,12 @@ workflows:
       groups:
         - p12
       ios_signing:
-        provisioning_profiles:
-          - name: Joe_iPhone
+        targets:
+          com.tribe.parentportal:
             distribution_type: ad_hoc
-        certificates:
-          - name: Adhoc_ParentPortal
-            password: $P12_PASSWORD
+            provisioning_profile: Joe_iPhone
+            certificate: Adhoc_ParentPortal
+            certificate_password: $P12_PASSWORD
 
     scripts:
       - name: Install dependencies
