@@ -1,0 +1,21 @@
+workflows:
+  ios-adhoc:
+    name: iOS AdHoc Build
+    environment:
+      vars:
+        APP_ID: "com.joewinston.parentportal"
+      ios_signing:
+        provisioning_profiles:
+          - path: provisioning/Joe_iPhone.mobileprovision
+        certificates:
+          - path: certificates/dga_ios_dist.p12
+            password: B@ckfl1p!23
+    scripts:
+      - name: Install dependencies
+        script: npm install
+      - name: Build web files
+        script: npm run build
+      - name: Sync Capacitor
+        script: npx cap sync ios
+    artifacts:
+      - build/ios/ipa/*.ipa
